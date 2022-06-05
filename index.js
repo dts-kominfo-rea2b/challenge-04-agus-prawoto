@@ -9,7 +9,7 @@ const dates = [
 
 // TODO: Buatlah fungsi createDate
 const createDate = (date, index = null) => {
-	if (index) {
+	if (index !== null) {
 		const result = new Date(date[index]).getTime() / 1000;
 		return result.toString();
 	}
